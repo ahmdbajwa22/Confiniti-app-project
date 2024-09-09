@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import googleIcon from "../../../../Assets/googleIcon.png";
-import facebookIcon from "../../../../Assets/facebookIcon.jpeg";
+// import googleIcon from "../../../../Assets/googleIcon.png";
+// import facebookIcon from "../../../../Assets/facebookIcon.jpeg";
 import { useNavigate } from "react-router-dom";
-import { auth } from "../../../../Services/Firebase/firebase";
+import { auth } from "../../../../Firebase/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import Cookies from "js-cookie";
 import toast from "react-hot-toast";
@@ -125,7 +125,7 @@ function SmSignInSubComp() {
             type="button"
             className="disabled w-60 rounded text-gray-500 border border-gray-400 hover:border-blue-400 hover:bg-blue-70 bg-white border-black-900 focus:ring focus:border-purple-900 px-4 py-2 my-2 flex justify-around items-center"
           >
-            <img src={googleIcon} alt="Login-with-google" className=" w-8" />
+            {/* <img src={googleIcon} alt="Login-with-google" className=" w-8" /> */}
             Login With Google
           </button>
 
@@ -133,11 +133,11 @@ function SmSignInSubComp() {
             type="button"
             className=" w-60 rounded text-gray-500 border border-gray-400 hover:border-blue-400 hover:bg-blue-70 bg-white border-black-900 focus:ring focus:border-purple-900 px-4 py-2 my-2 flex justify-around items-center"
           >
-            <img
+            {/* <img
               src={facebookIcon}
               alt="Login-with-facebook"
               className=" w-8"
-            />
+            /> */}
             Login With Facebook
           </button>
         </div>
